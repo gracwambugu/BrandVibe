@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" role="img" aria-label="Brand Vibe">
+  <defs>
+    <!-- Teal gradient matching your site -->
+    <linearGradient id="bvGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#18b6b0"/>
+      <stop offset="55%" stop-color="#3fd0c9"/>
+      <stop offset="100%" stop-color="#10938e"/>
+    </linearGradient>
+
+    <!-- Soft glow for icon -->
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 .22 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Simple swoosh icon (modern + matches your original vibe) -->
+  <g transform="translate(270 18)" filter="url(#softGlow)">
+    <path d="M60 44c-30 18-70 24-110 18" fill="none" stroke="url(#bvGradient)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M62 64c-34 18-80 24-124 16" fill="none" stroke="url(#bvGradient)" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+
+    <!-- dots -->
+    <circle cx="82" cy="26" r="7" fill="url(#bvGradient)"/>
+    <circle cx="102" cy="16" r="5" fill="url(#bvGradient)" opacity=".9"/>
+    <circle cx="120" cy="10" r="4" fill="url(#bvGradient)" opacity=".85"/>
+  </g>
+
+  <!-- Wordmark -->
+  <!-- NOTE: Uses system fonts; looks clean on web. If you want exact font matching later,
+       share the font name or original vector file and we'll match 1:1. -->
+  <text x="40" y="102"
+        font-family="ui-serif, Georgia, 'Times New Roman', serif"
+        font-size="76"
+        font-weight="700"
+        fill="#1d1d1d"
+        letter-spacing="-1">
+    Brand
+  </text>
+
+  <text x="250" y="102"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="76"
+        font-weight="800"
+        fill="url(#bvGradient)"
+        letter-spacing="-1">
+    Vibe
+  </text>
+</svg>

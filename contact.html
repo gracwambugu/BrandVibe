@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Vibe • Contact</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="./index.html"><img src="./assets/brandvibe-logo.svg" alt="Brand Vibe" class="logo-img"></a>
+
+      <input class="nav-toggle" type="checkbox" id="menuToggle" />
+      <label class="burger" for="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./faq.html">FAQs</a>
+        <a class="nav-cta active" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div class="container page-hero-box">
+        <p class="breadcrumb">Home / Contact</p>
+        <h1 class="page-title">Contact</h1>
+        <p class="muted">Tell us your goals and we’ll recommend a monthly package (online + offline options).</p>
+      </div>
+    </section>
+
+    <div class="divider-wrap"><hr class="section-divider" /></div>
+
+    <section class="section">
+      <div class="container grid" style="grid-template-columns:1fr;gap:14px;">
+        <div class="card">
+          <h3 style="margin:0 0 10px;">Let’s talk 📩</h3>
+          <p class="muted" style="margin:0 0 12px;">Share your industry + goals. If you have links/examples, include them.</p>
+          <p style="margin:0 0 6px;"><strong>Email:</strong> info@brandvibe.co.ke</p>
+          <p style="margin:0 0 6px;"><strong>Location:</strong> Kenya (Remote-friendly)</p>
+          <p style="margin:0;"><strong>Response:</strong> 24–48 hours</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 10px;">Send a message</h3>
+          <form>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+              <label for="message">What do you need help with?</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us your goals and what you want to handle..." required></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Send</button>
+            <p class="muted" style="margin:12px 0 0;font-size:13px;">
+              This is a static HTML form (no sending yet). Later we can connect EmailJS / Formspree.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-wrap"><hr class="section-divider" /></div>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand"><span class="logo-dot"></span>Brand<span class="logo-accent">Vibe</span></p>
+          <p class="muted">Marketing that looks good and performs better ✨</p>
+        </div>
+        <div class="footer-links">
+          <a href="./services.html">Services</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./faq.html">FAQs</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+      <p class="container copyright">© 2026 Brand Vibe. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

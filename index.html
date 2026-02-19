@@ -40,12 +40,14 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "BrandVibe",
+    "@id": "https://brandvibe.co.ke/#organization",
+    "name": "Brand Vibe",
     "url": "https://brandvibe.co.ke",
     "logo": "https://brandvibe.co.ke/assets/logo.png",
-    "description": "BrandVibe is a branding and marketing agency in Kenya specializing in strategy, digital growth, and creative execution.",
+    "description": "Brand Vibe is a branding and marketing agency in Kenya specializing in brand strategy, digital growth, content marketing, and creative execution.",
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
       "addressCountry": "KE"
     },
     "sameAs": [
@@ -83,45 +85,26 @@
 
   <main class="page">
     <!-- HERO -->
-    <section class="hero hero-brand">
-      <div class="container hero-grid">
+    <section class="hero">
+      <div class="hero-wrap">
+        
+        <!-- LEFT -->
+        <div class="hero-left">
+          <p class="kicker">WELCOME TO BRANDVIBE</p>
+          <h1>We Build Brands That Connect, Convert, and Scale</h1>
+          <p>BrandVibe is a full-service branding and marketing agency helping businesses clarify their message, grow visibility, and drive measurable results—online and offline.</p>
 
-        <div class="hero-content">
-          <span class="hero-kicker">WELCOME TO BRANDVIBE</span>
-
-          <h1>
-            We Build Brands That<br>
-            Connect, Convert, and<br>
-            Scale
-          </h1>
-
-          <p class="hero-subtext">
-            BrandVibe is a full-service branding and marketing agency helping
-            businesses clarify their message, grow visibility, and drive
-            measurable results—online and offline.
-          </p>
-
-          <div class="hero-actions">
-            <a href="contact.html" class="btn primary">
-              Get a Free Brand Audit →
-            </a>
-            <a href="services.html" class="btn ghost">
-              Explore Our Services
-            </a>
+          <div class="hero-buttons">
+            <a class="btn primary" href="./contact.html">Get a Free Brand Audit →</a>
+            <a class="btn secondary" href="./services.html">Explore Our Services</a>
           </div>
-
-          <ul class="hero-checks">
-            <li>Strategy-led execution</li>
-            <li>Creative with commercial impact</li>
-            <li>African market insight, global standards</li>
-            <li>End-to-end brand solutions</li>
-          </ul>
         </div>
 
-        <aside class="hero-side lock-panels">
-          <div class="panel fixed-panel">
-            <h3 class="panel-title">What we help with 🚀</h3>
-            <ul class="panel-list">
+        <!-- RIGHT -->
+        <div class="hero-right">
+          <div class="card">
+            <h3>What we help with 🚀</h3>
+            <ul>
               <li>Social Media Strategy + Posting</li>
               <li>Content Production + Storytelling</li>
               <li>Digital Campaign Support (Meta)</li>
@@ -130,15 +113,13 @@
             </ul>
           </div>
 
-          <div class="panel panel-soft fixed-panel">
-            <h3 class="panel-title">Quick Starter Plan 💬</h3>
-            <p class="muted">
-              Tell us your goals and industry — we'll recommend a monthly package with clear deliverables.
-            </p>
-            <a class="btn small primary" href="./contact.html">Request a quote</a>
+          <div class="card">
+            <h3>Quick Starter Plan 💬</h3>
+            <p>Tell us your goals and industry — we'll recommend a monthly package with clear deliverables.</p>
+            <a class="btn primary" href="./contact.html">Request a quote</a>
           </div>
-        </aside>
-        
+        </div>
+
       </div>
     </section>
 
@@ -256,6 +237,33 @@
           <a href="./blog.html">Blog</a>
           <a href="./faq.html">FAQs</a>
           <a href="./contact.html">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/_brandvibe" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <circle cx="17.5" cy="6.5" r="1.5"></circle>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@_brandvibe" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 0 6-6H9v13a4 4 0 1 1-8-4"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/brandvibeltd" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://x.com/_brandvibe" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.6l-5.165-6.756-5.909 6.756h-3.315l7.73-8.835L2.6 2.25h6.764l4.671 6.18 5.509-6.18zM17.15 18.75h1.824L6.188 3.75H4.22L17.15 18.75z"></path>
+            </svg>
+          </a>
         </div>
       </div>
       <p class="container copyright">© 2026 Brand Vibe. All rights reserved.</p>

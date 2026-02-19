@@ -1137,6 +1137,52 @@ input:focus,textarea:focus{
   margin-top:10px;
 }
 
+/* ---------- LOCK HOME HERO PANELS (KEEP AS IS) ---------- */
+.lock-panels{
+  display:grid;
+  gap:14px;
+}
+
+/* freeze sizing + shape */
+.lock-panels .fixed-panel{
+  border-radius:22px !important;
+  padding:18px !important;
+  border:1px solid rgba(0,0,0,.08) !important;
+  box-shadow:0 12px 34px rgba(0,0,0,.08) !important;
+  transform:none !important;
+}
+
+/* stop any global hover lift or animation affecting them */
+.lock-panels .fixed-panel:hover{
+  transform:none !important;
+  box-shadow:0 12px 34px rgba(0,0,0,.08) !important;
+}
+
+/* typography lock */
+.lock-panels .panel-title{
+  font-weight:950 !important;
+  font-size:16px !important;
+  margin:0 0 10px !important;
+}
+
+.lock-panels .panel-list{
+  margin:0 !important;
+  padding-left:18px !important;
+  line-height:1.75 !important;
+  color:rgba(0,0,0,.78) !important;
+}
+
+/* keep the soft panel background exactly */
+.lock-panels .panel-soft{
+  background:linear-gradient(180deg,#fff,rgba(24,182,176,.08)) !important;
+}
+
+/* button stays same sizing */
+.lock-panels .btn.small{
+  padding:10px 12px !important;
+  border-radius:14px !important;
+}
+
 /* ---------- Reduced motion support ---------- */
 @media (prefers-reduced-motion: reduce){
   *{
